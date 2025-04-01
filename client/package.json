@@ -1,0 +1,37 @@
+{
+  "name": "boletas-urh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build":"electron-builder"
+  },
+  "build":{
+    "appId":"boletas-unac",
+    "win":{
+      "target":[
+        "nsis"
+      ],
+      "icon":"icon.ico"
+    }
+    ,
+    "nsis":{
+      "oneClick":false,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "uninstallDisplayName": "boletas-unac-uninstaller",
+      "license": "",
+      "allowToChangeInstallationDirectory":true
+    }  
+  },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.1.1",
+    "electron-builder": "^23.6.0"
+  }
+}
